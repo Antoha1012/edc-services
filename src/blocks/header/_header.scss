@@ -17,3 +17,36 @@
     display: block;
   }
 }
+@media (max-width: 1200px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    &__text {
+      position: relative;
+      z-index: 3;
+      font-size: 18px;
+      margin: 0;
+      margin-top: -100px;
+      margin-left: 15px;
+      padding: 0 15px;
+    }
+    &__image {
+      grid-row: 1;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    &__text {
+      font-size: 18px;
+      margin: 0;
+      margin-top: 11px;
+      padding: 0 15px;
+    }
+    &__image {
+      grid-row: 1;
+    }
+  }
+}

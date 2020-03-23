@@ -110,6 +110,7 @@
 }
 @media (max-width: 576px) {
   .footer {
+    margin: 0;
     &__content {
       display: grid;
       grid-template-columns: 1fr;

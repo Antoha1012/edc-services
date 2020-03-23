@@ -82,11 +82,11 @@
 }
 @media (max-width: 1200px) {
   .wrapper {
-    border-left: 15px solid #242424;
-    border-right: 15px solid #242424;
+    border: 25px solid #6e6e6f;
   }
   .nav {
     &__logo {
+      margin: 0;
       width: 170px;
     }
   }
@@ -94,8 +94,9 @@
 @media (max-width: 768px) {
   .wrapper {
     background: #ffffff;
-    border-left: 15px solid #242424;
-    border-right: 15px solid #242424;
+    border: 15px solid #6e6e6f;
+    border-bottom: 19px solid #6e6e6f;
+    border-top: 19px solid #6e6e6f;
   }
   .nav {
     position: relative;
@@ -119,7 +120,7 @@
     &__line {
       width: 18px;
       height: 2px;
-      background-color: #232323;
+      background-color: #6e6e6f;
       display: block;
       position: absolute;
       transition: ease-in-out 500ms;
@@ -151,12 +152,12 @@
       top: 67px;
       left: 0px;
       z-index: 30;
-      width: calc(100% + 55px);
-      height: 400px;
-      margin-left: -25px;
+      width: calc(100% + 78px);
+      height: 484px;
+      margin-left: -39px;
       padding-top: 100px;
       transform: translateX(-200%);
-      background-color: #242424;
+      background-color: #6e6e6f;
       transition: ease-in-out 700ms;
     }
 
@@ -193,6 +194,14 @@
     &__checkbox:checked + &__burger + &__list {
       // 1) height: 159px;
       transform: translateX(0);
+    }
+  }
+}
+@media (max-width: 576px) {
+  .nav {
+    &__list {
+      width: calc(100% + 60px);
+      margin-left: -30px;
     }
   }
 }

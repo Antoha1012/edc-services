@@ -4703,19 +4703,20 @@ html {
 
 @media (max-width: 1200px) {
   .wrapper {
-    border-left: 15px solid #242424;
-    border-right: 15px solid #242424;
+    border: 25px solid #6e6e6f;
   }
 
   .nav__logo {
+    margin: 0;
     width: 170px;
   }
 }
 @media (max-width: 768px) {
   .wrapper {
     background: #ffffff;
-    border-left: 15px solid #242424;
-    border-right: 15px solid #242424;
+    border: 15px solid #6e6e6f;
+    border-bottom: 19px solid #6e6e6f;
+    border-top: 19px solid #6e6e6f;
   }
 
   .nav {
@@ -4741,7 +4742,7 @@ html {
   .nav__line {
     width: 18px;
     height: 2px;
-    background-color: #232323;
+    background-color: #6e6e6f;
     display: block;
     position: absolute;
     transition: ease-in-out 500ms;
@@ -4768,12 +4769,12 @@ html {
     top: 67px;
     left: 0px;
     z-index: 30;
-    width: calc(100% + 55px);
-    height: 400px;
-    margin-left: -25px;
+    width: calc(100% + 78px);
+    height: 484px;
+    margin-left: -39px;
     padding-top: 100px;
     transform: translateX(-200%);
-    background-color: #242424;
+    background-color: #6e6e6f;
     transition: ease-in-out 700ms;
   }
   .nav__item {
@@ -4804,6 +4805,12 @@ html {
     transform: translateX(0);
   }
 }
+@media (max-width: 576px) {
+  .nav__list {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4824,6 +4831,39 @@ html {
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header__text {
+    position: relative;
+    z-index: 3;
+    font-size: 18px;
+    margin: 0;
+    margin-top: -100px;
+    margin-left: 15px;
+    padding: 0 15px;
+  }
+  .header__image {
+    grid-row: 1;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header__text {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 11px;
+    padding: 0 15px;
+  }
+  .header__image {
+    grid-row: 1;
+  }
+}
 .services__title {
   margin: 0;
   margin-top: -52px;
@@ -4890,6 +4930,7 @@ html {
   .services__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
   }
   .services__content-picture {
     display: none;
@@ -5024,6 +5065,9 @@ html {
   }
 }
 @media (max-width: 576px) {
+  .footer {
+    margin: 0;
+  }
   .footer__content {
     display: grid;
     grid-template-columns: 1fr;
