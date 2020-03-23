@@ -1,0 +1,19 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #232323;
+    margin-top: 156px;
+    margin-left: 394px;
+    max-width: 429px;
+  }
+  &__image {
+    width: 100%;
+    display: block;
+  }
+}
